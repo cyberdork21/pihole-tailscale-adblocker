@@ -49,3 +49,5 @@ During the deployment, I encountered and solved three major specific issues:
 **The Problem:** Ads were occasionally appearing despite the Pi being online.
 **The Diagnosis:** Devices configured with `Secondary DNS: 8.8.8.8` were bypassing the Pi-hole whenever the Pi took more than a few milliseconds to respond.
 **The Solution:** Forced all client DNS requests (Primary and Secondary) to the Pi-hole IP, or `0.0.0.0` for the secondary slot, ensuring no fallback to ad-supported DNS servers.
+
+*This repository was migrated from my original account after a 2FA lockout. Original commit history preserved via fork.*
